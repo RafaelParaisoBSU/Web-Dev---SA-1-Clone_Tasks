@@ -9,7 +9,8 @@ body {
     background-color: #231651;
 }
 
-h1, button {
+h1,
+button {
     font-family: "Teko", sans-serif;
 }
 
@@ -31,8 +32,14 @@ p {
 .nav h1 {
     font-size: 3em;
     margin: auto 0px;
-    color:#FFFFFF;
+    color: #FFFFFF;
     cursor: pointer;
+    text-shadow: 2px 2px 10px #4DCCBD;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav h1:hover {
+    color: #EEF36A;
     text-shadow: 2px 2px 10px #4DCCBD;
 }
 
@@ -48,9 +55,9 @@ p {
     font-size: 1.5em;
 }
 
-.nav ul li a{
+.nav ul li a {
     text-decoration: none;
-    color:#FFFFFF;
+    color: #FFFFFF;
     transition: all 0.3s ease-in-out;
     text-shadow: 2px 2px 10px #4DCCBD;
 }
@@ -91,14 +98,15 @@ p {
 
 .gridcontainer {
     border: 2px solid #4DCCBD;
-    box-shadow: 0px 5px 10px #070410;
+    box-shadow: 0px 0px 50px #4DCCBD;
+    box-shadow: 10px 10px 10px #4DCCBD;
     background-color: #070410;
 }
 
 .gridcontainer h1 {
     font-size: 3em;
     color: #EEF36A;
-    text-shadow: 2px 2px 10px#EEF36A;
+    text-shadow: 2px 2px 8px #4DCCBD;
 }
 
 .gridcontainer p {
@@ -113,7 +121,7 @@ p {
     height: 100%;
     object-fit: cover;
 }
-    
+
 .gridcontent {
     padding: 16px;
     display: flex;
@@ -128,19 +136,22 @@ p {
     background-color: #231651;
     color: #FFF;
     cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    border: 2px solid #EEF36A;
 }
 
 .watchnow:hover {
     background-color: #4DCCBD;
-    box-shadow: 0px 10px 20px #4DCCBD;
+    box-shadow: 0px 0px 40px #4DCCBD;
     color: #EEF36A;
+    text-shadow: 0px 0px 20px #EEF36A;
 }
 
 .gridcontainer:nth-child(1) {
     grid-column: span 2 / span 2;
 }
 
-.gridcontainer:nth-child(1) img{
+.gridcontainer:nth-child(1) img {
     width: 100%;
     height: 350px;
     object-fit: cover;
@@ -202,63 +213,63 @@ p {
         margin: 0 auto;
         margin-bottom: 36px;
     }
-        
+
     .gridcontent {
         padding: 16px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    
+
     .gridcontainer:nth-child(1) {
         grid-column: span 1;
         display: grid;
         grid-template-rows: auto 1fr;
     }
-    
-    .gridcontainer:nth-child(1) img{
+
+    .gridcontainer:nth-child(1) img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    
+
     .gridcontainer:nth-child(1) .gridcontent {
         display: grid;
     }
-    
+
     .gridcontainer:nth-child(1) .gridcontent button {
         width: 100%;
         font-size: 2em;
     }
-    
+
     .gridcontainer:nth-child(2) {
         grid-column: span 1;
         display: grid;
         grid-template-rows: auto 1fr;
     }
-    
+
     .gridcontainer:nth-child(3) {
         grid-column: span 1;
         display: grid;
         grid-template-rows: auto 1fr;
     }
-    
+
     .gridcontainer:nth-child(4) {
         grid-column: span 1;
         grid-row-start: 2;
         display: grid;
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
     }
-    
+
     .gridcontainer:nth-child(5) {
-        grid-column: span 1 ;
+        grid-column: span 1;
         grid-row-start: 3;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
     }
-    
+
     .gridcontainer:nth-child(6) {
         grid-column: span 1;
         grid-row-start: 3;
@@ -272,7 +283,7 @@ p {
     .nav {
         margin-bottom: 16px;
     }
-    
+
     .nav h1 {
         font-size: 2em;
     }
@@ -280,103 +291,103 @@ p {
     .nav ul li {
         display: none;
     }
-    
+
     .search {
         font-size: 2em;
     }
-    
+
     .grid {
         display: grid;
-        grid-template-columns: repeat (1,1fr);
+        grid-template-columns: repeat (1, 1fr);
         grid-template-rows: repeat (6, 1fr);
         gap: 16px;
         max-width: 100%;
         margin: 0 auto;
         margin-bottom: 16px;
     }
-    
+
     .gridcontainer {
         border: 2px solid black;
         box-shadow: 10px 10px 20px;
         width: 100vw;
     }
-    
+
     .gridcontainer h1 {
         font-size: 2em;
     }
-    
+
     .gridcontainer p {
         font-size: 1.5em;
         margin-bottom: 16px;
     }
-    
+
     .gridcontainer img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-        
+
     .gridcontent {
         padding: 16px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    
+
     .watchnow {
         font-size: 2em;
         padding: 16px;
         border-radius: 16px;
     }
-    
+
     .gridcontainer:nth-child(1) {
         grid-column: span 1;
         display: grid;
         grid-template-rows: auto 1fr;
     }
-    
-    .gridcontainer:nth-child(1) img{
+
+    .gridcontainer:nth-child(1) img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    
+
     .gridcontainer:nth-child(1) .gridcontent {
         display: grid;
     }
-    
+
     .gridcontainer:nth-child(1) .gridcontent button {
         width: 100%;
         font-size: 2em;
     }
-    
+
     .gridcontainer:nth-child(2) {
         grid-column: span 1;
         grid-row-start: 2;
 
         display: grid;
     }
-    
+
     .gridcontainer:nth-child(3) {
         grid-column: span 1;
         grid-row-start: 3;
         display: grid;
     }
-    
+
     .gridcontainer:nth-child(4) {
         grid-column: span 1;
         grid-row-start: 4;
         display: grid;
         grid-template-columns: 1fr;
     }
-    
+
     .gridcontainer:nth-child(5) {
         grid-column: span 1;
         grid-row-start: 5;
         display: grid;
         grid-template-columns: 1fr;
     }
-    
+
     .gridcontainer:nth-child(6) {
         grid-column: span 1;
         grid-row-start: 6;
@@ -384,5 +395,3 @@ p {
         grid-template-columns: 1fr;
     }
 }
-
-

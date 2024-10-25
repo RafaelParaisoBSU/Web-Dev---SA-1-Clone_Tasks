@@ -148,7 +148,7 @@ main {
     color: white;
     padding: 20px;
     text-align: center;
-    width: 100%;
+    margin-top: auto;
 }
 
 @media screen and (width < 1024px) {
