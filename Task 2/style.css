@@ -35,7 +35,7 @@ p {
     margin: auto 0px;
     color: #FFFFFF;
     cursor: pointer;
-    text-shadow: 2px 2px 10px #4DCCBD;
+    text-shadow: 4px 2px 2px #4DCCBD;
     transition: all 0.2s ease-in-out;
 }
 
@@ -53,7 +53,7 @@ p {
     list-style: none;
     margin: auto 16px;
     font-family: "Lato", serif;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 .nav ul li a {
@@ -108,7 +108,7 @@ p {
 .gridcontainer h1 {
     font-size: 3em;
     color: #EEF36A;
-    text-shadow: 2px 2px 8px #4DCCBD;
+    text-shadow: 4px 2px 4px #4DCCBD;
 }
 
 .gridcontainer p {
