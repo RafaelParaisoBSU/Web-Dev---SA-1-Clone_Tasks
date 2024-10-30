@@ -175,8 +175,16 @@ body {
     .gridcontent button {
         width: 90%;
         font-size: 3em;
-
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
+    
+    .watch {
+        margin-bottom: -16px;
+    }
+    
 }
 
 
@@ -250,9 +258,15 @@ body {
         }
 
         .gridcontent button {
-            width: 100%;
             font-size: 2em;
+            display: block;
+            width: 100%;
         }
+
+        .watch {
+            margin-bottom: 0px;
+        }
+        
     }
 
     .gridcontainer:nth-child(2) {
@@ -369,8 +383,13 @@ body {
         }
 
         .gridcontent button {
-            width: 100%;
             font-size: 2em;
+            display: block;
+            width: 100%;
+        }
+
+        .watch {
+            margin-bottom: 0px;
         }
     }
 
