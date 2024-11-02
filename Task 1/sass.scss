@@ -1,3 +1,7 @@
+$background: #e9e9e9;
+$footer: #14181d;
+$content: #FFFFFF;
+
 /* Reset margins, paddings, and box-sizing for all elements */
 * {
     margin: 0;
@@ -8,7 +12,7 @@
 
 /* Styling for the body */
 body {
-    background-color: #e9e9e9;
+    background-color: $background;
     overflow-x: hidden;
 
     /* Font styles for h1 and h2 elements */
@@ -40,7 +44,7 @@ body {
 
 /* Styling for the header */
 header {
-    background-color: #e9e9e9;
+    background-color: $background;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +100,7 @@ header {
 main {
     margin: 0 auto;
     width: 1024px;
-    background-color: white;
+    background-color: $content;
     border: 2px solid black;
 
     /* Styling for the top section within the main content area */
@@ -167,7 +171,7 @@ main {
 
 /* Styling for the footer */
 .footer {
-    background-color: #14181d;
+    background-color: $footer;
     color: white;
     padding: 20px;
     text-align: center;
