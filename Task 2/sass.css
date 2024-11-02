@@ -1,4 +1,7 @@
 
+/* Color variables */
+/* Mixin for theme styling, used on hover */
+/* Basic global styling */
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +11,8 @@
 
 body {
   background-color: #231651;
+  /* Apply font styles to h1 and button elements */
+  /* Apply font styles to paragraph elements */
 }
 body h1,
 body button {
@@ -17,6 +22,7 @@ body p {
   font-family: "Lato", serif;
 }
 
+/* Navigation bar styling */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -27,6 +33,12 @@ body p {
   box-shadow: 0px 10px 36px #4DCCBD;
   background-color: #070410;
   width: 100%;
+  /* Style for the h1 element within the navigation bar */
+  /* Hover state for the h1 element within the navigation bar */
+  /* Style for the unordered list within the navigation bar */
+  /* Style for the list items within the unordered list */
+  /* Style for the anchor tags within the list items */
+  /* Hover state for the anchor tags within the list items */
 }
 .nav h1 {
   font-size: 3em;
@@ -60,6 +72,7 @@ body p {
   color: #EEF36A;
 }
 
+/* Styling for the search button */
 .search {
   font-size: 3em;
   border: 2px solid #EEF36A;
@@ -73,6 +86,7 @@ body p {
   box-shadow: 2px 2px 10px #231651;
 }
 
+/* Hover state for the search button */
 .search:hover {
   background-color: #4DCCBD;
   border: 2px solid #EEF36A;
@@ -80,6 +94,7 @@ body p {
   color: #EEF36A;
 }
 
+/* Grid container styling */
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -90,37 +105,43 @@ body p {
   width: 100%;
 }
 
-.gridcontainer {
+/* Movie container styling */
+.moviecontainer {
   border: 2px solid #4DCCBD;
   box-shadow: 0px 0px 50px #4DCCBD;
   box-shadow: 10px 10px 10px #4DCCBD;
   background-color: #070410;
+  /* Style for the h1 element within the movie container */
+  /* Style for the paragraph element within the movie container */
+  /* Style for the img element within the movie container */
 }
-.gridcontainer h1 {
+.moviecontainer h1 {
   font-size: 3em;
   color: #EEF36A;
   text-shadow: 4px 2px 4px #4DCCBD;
 }
-.gridcontainer p {
+.moviecontainer p {
   font-size: 1.5em;
   margin-bottom: 16px;
   color: #FFF;
   text-shadow: 2px 2px 5px white;
 }
-.gridcontainer img {
+.moviecontainer img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.gridcontent {
+/* Container content styling */
+.containercontent {
   padding: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+/* Styling for the watch now button */
 .watchnow {
   font-size: 2em;
   padding: 16px;
@@ -132,6 +153,7 @@ body p {
   border: 2px solid #EEF36A;
 }
 
+/* Hover state for the watch now button */
 .watchnow:hover {
   background-color: #4DCCBD;
   border: 2px solid #EEF36A;
@@ -139,20 +161,25 @@ body p {
   color: #EEF36A;
 }
 
-.gridcontainer:nth-child(1) {
+/* Specific styles for the first movie container */
+.moviecontainer:nth-child(1) {
   grid-column: span 2/span 2;
+  /* Style for the img element within the first movie container */
+  /* Container content styling for the first movie container */
+  /* Button styling for the first movie container */
+  /* Additional styling for the watch button within the first movie container */
 }
-.gridcontainer:nth-child(1) img {
+.moviecontainer:nth-child(1) img {
   width: 100%;
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.gridcontainer:nth-child(1) .gridcontent {
+.moviecontainer:nth-child(1) .containercontent {
   display: flex;
   flex-direction: row;
 }
-.gridcontainer:nth-child(1) .gridcontent button {
+.moviecontainer:nth-child(1) .containercontent button {
   width: 90%;
   font-size: 3em;
   display: flex;
@@ -160,47 +187,55 @@ body p {
   justify-content: center;
   flex-direction: column;
 }
-.gridcontainer:nth-child(1) .watch {
+.moviecontainer:nth-child(1) .watch {
   margin-bottom: -16px;
 }
 
-.gridcontainer:nth-child(2) {
+/* Specific styles for the second movie container */
+.moviecontainer:nth-child(2) {
   grid-column: span 1;
   display: grid;
   grid-template-rows: auto 1fr;
 }
 
-.gridcontainer:nth-child(3) {
+/* Specific styles for the third movie container */
+.moviecontainer:nth-child(3) {
   grid-column: span 1;
   display: grid;
   grid-template-rows: auto 1fr;
 }
 
-.gridcontainer:nth-child(4) {
+/* Specific styles for the fourth movie container */
+.moviecontainer:nth-child(4) {
   grid-column: span 2/span 2;
   grid-row-start: 3;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.gridcontainer:nth-child(5) {
+/* Specific styles for the fifth movie container */
+.moviecontainer:nth-child(5) {
   grid-column: span 2/span 2;
   grid-row-start: 4;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.gridcontainer:nth-child(6) {
+/* Specific styles for the sixth movie container */
+.moviecontainer:nth-child(6) {
   grid-column: span 2/span 2;
   grid-row-start: 5;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* Media query for screen widths 1024px and below */
 @media screen and (width <= 1024px) {
+  /* Adjustments for the navigation bar */
   .nav {
     margin-bottom: 36px;
   }
+  /* Adjustments for the grid container */
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -209,79 +244,95 @@ body p {
     margin: 0 auto;
     margin-bottom: 36px;
   }
-  .gridcontent {
+  /* Adjustments for the container content */
+  .containercontent {
     padding: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .gridcontainer:nth-child(1) {
+  /* Adjustments for the first movie container */
+  .moviecontainer:nth-child(1) {
     grid-column: span 1;
     display: grid;
     grid-template-rows: auto 1fr;
+    /* Adjustments for the img element within the first movie container */
+    /* Adjustments for the container content within the first movie container */
+    /* Adjustments for the button within the first movie container */
+    /* Adjustments for the watch button within the first movie container */
   }
-  .gridcontainer:nth-child(1) img {
+  .moviecontainer:nth-child(1) img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .gridcontainer:nth-child(1) .gridcontent {
+  .moviecontainer:nth-child(1) .containercontent {
     display: grid;
   }
-  .gridcontainer:nth-child(1) .gridcontent button {
+  .moviecontainer:nth-child(1) .containercontent button {
     font-size: 2em;
     display: block;
     width: 100%;
   }
-  .gridcontainer:nth-child(1) .watch {
+  .moviecontainer:nth-child(1) .watch {
     margin-bottom: 0px;
   }
-  .gridcontainer:nth-child(2) {
+  /* Adjustments for the second movie container */
+  .moviecontainer:nth-child(2) {
     grid-column: span 1;
     display: grid;
     grid-template-rows: auto 1fr;
   }
-  .gridcontainer:nth-child(3) {
+  /* Adjustments for the third movie container */
+  .moviecontainer:nth-child(3) {
     grid-column: span 1;
     display: grid;
     grid-template-rows: auto 1fr;
   }
-  .gridcontainer:nth-child(4) {
+  /* Adjustments for the fourth movie container */
+  .moviecontainer:nth-child(4) {
     grid-column: span 1;
     grid-row-start: 2;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
   }
-  .gridcontainer:nth-child(5) {
+  .moviecontainer:nth-child(5) {
     grid-column: span 1;
     grid-row-start: 3;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
   }
-  .gridcontainer:nth-child(6) {
+  /* Adjustments for the sixth movie container */
+  .moviecontainer:nth-child(6) {
     grid-column: span 1;
     grid-row-start: 3;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
   }
+  /* Media query for screen widths 720px and below */
 }
-@media screen and (width <= 720px) {
+@media screen and (width <= 1024px) and (width <= 720px) {
+  /* Adjustments for the navigation bar */
   .nav {
     margin-bottom: 16px;
   }
+  /* Adjustments for the h1 element within the navigation bar */
   .nav h1 {
     font-size: 2em;
   }
+  /* Hide the list items within the navigation bar */
   .nav ul li {
     display: none;
   }
+  /* Adjustments for the search button */
   .search {
     font-size: 2em;
   }
+  /* Adjustments for the grid container */
   .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -291,79 +342,95 @@ body p {
     margin-bottom: 16px;
     width: 100%;
   }
-  .gridcontainer {
+  /* Adjustments for the movie container */
+  .moviecontainer {
     border: 2px solid black;
     box-shadow: 10px 10px 20px;
+    /* Adjustments for the h1 element within the movie container */
+    /* Adjustments for the paragraph element within the movie container */
+    /* Adjustments for the img element within the movie container */
   }
-  .gridcontainer h1 {
+  .moviecontainer h1 {
     font-size: 2em;
   }
-  .gridcontainer p {
+  .moviecontainer p {
     font-size: 1.5em;
     margin-bottom: 16px;
   }
-  .gridcontainer img {
+  .moviecontainer img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .gridcontent {
+  /* Adjustments for the container content */
+  .containercontent {
     padding: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
+  /* Adjustments for the watch now button */
   .watchnow {
     font-size: 2em;
     padding: 16px;
     border-radius: 16px;
   }
-  .gridcontainer:nth-child(1) {
+  /* Adjustments for the first movie container */
+  .moviecontainer:nth-child(1) {
     grid-column: span 1;
     display: grid;
     grid-template-rows: auto 1fr;
+    /* Adjustments for the img element within the first movie container */
+    /* Adjustments for the container content within the first movie container */
+    /* Adjustments for the button within the first movie container */
+    /* Adjustments for the watch button within the first movie container */
   }
-  .gridcontainer:nth-child(1) img {
+  .moviecontainer:nth-child(1) img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .gridcontainer:nth-child(1) .gridcontent {
+  .moviecontainer:nth-child(1) .containercontent {
     display: grid;
   }
-  .gridcontainer:nth-child(1) .gridcontent button {
+  .moviecontainer:nth-child(1) .containercontent button {
     font-size: 2em;
     display: block;
     width: 100%;
   }
-  .gridcontainer:nth-child(1) .watch {
+  .moviecontainer:nth-child(1) .watch {
     margin-bottom: 0px;
   }
-  .gridcontainer:nth-child(2) {
+  /* Adjustments for the second movie container */
+  .moviecontainer:nth-child(2) {
     grid-column: span 1;
     grid-row-start: 2;
     display: grid;
   }
-  .gridcontainer:nth-child(3) {
+  /* Adjustments for the third movie container */
+  .moviecontainer:nth-child(3) {
     grid-column: span 1;
     grid-row-start: 3;
     display: grid;
   }
-  .gridcontainer:nth-child(4) {
+  /* Adjustments for the fourth movie container */
+  .moviecontainer:nth-child(4) {
     grid-column: span 1;
     grid-row-start: 4;
     display: grid;
     grid-template-columns: 1fr;
   }
-  .gridcontainer:nth-child(5) {
+  /* Adjustments for the fifth movie container */
+  .moviecontainer:nth-child(5) {
     grid-column: span 1;
     grid-row-start: 5;
     display: grid;
     grid-template-columns: 1fr;
   }
-  .gridcontainer:nth-child(6) {
+  /* Adjustments for the sixth movie container */
+  .moviecontainer:nth-child(6) {
     grid-column: span 1;
     grid-row-start: 6;
     display: grid;

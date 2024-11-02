@@ -1,3 +1,4 @@
+/* Reset margins, paddings, and box-sizing for all elements */
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +6,14 @@
   transition: all 0.1s ease;
 }
 
+/* Styling for the body */
 body {
   background-color: #e9e9e9;
   overflow-x: hidden;
+  /* Font styles for h1 and h2 elements */
+  /* Font styles for p and h3 elements */
+  /* Specific style for h1 elements */
+  /* Specific style for h2 elements */
 }
 body h1,
 body h2 {
@@ -28,12 +34,14 @@ body h2 {
   margin-bottom: 10px;
 }
 
+/* Styling for the header */
 header {
   background-color: #e9e9e9;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  /* Style for the img element within the header */
 }
 header img {
   max-width: 100%;
@@ -42,11 +50,15 @@ header img {
   margin-top: 20px;
 }
 
+/* Styling for the navigation bar */
 .navbar {
   width: 100vw;
   display: flex;
   justify-content: center;
   padding: 10px;
+  /* Styling for the unordered list within the navigation bar */
+  /* Styling for the list items within the unordered list */
+  /* Styling for the anchor tags within the list items */
 }
 .navbar ul {
   list-style: none;
@@ -64,48 +76,53 @@ header img {
   text-decoration: none;
   padding: 10px 20px;
   color: #000;
+  /* Hover state for the anchor tags */
 }
 .navbar a:hover {
   background-color: white;
   padding: 16px;
 }
 
+/* Styling for the main content area */
 main {
   margin: 0 auto;
   width: 1024px;
   background-color: white;
   border: 2px solid black;
+  /* Styling for the top section within the main content area */
+  /* Styling for the column content within the main content area */
+  /* Styling for the grid images within the main content area */
 }
-
-.topsection {
+main .topsection {
   padding: 50px;
+  /* Styling for the paragraph elements within the top section */
 }
-.topsection p {
+main .topsection p {
   font-size: 32px;
   margin-bottom: 20px;
 }
-
-.columncontent {
+main .columncontent {
   padding: 50px;
   -moz-column-count: 3;
        column-count: 3;
   margin-top: -50px;
 }
-
-.gridimages {
+main .gridimages {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
+  /* Styling for the img elements within the grid images */
 }
-.gridimages img {
+main .gridimages img {
   max-width: 100%;
+  /* Specific style for the first img element within the grid images */
 }
-
-.gridimages img:nth-child(1) {
+main .gridimages img:nth-child(1) {
   grid-column: span 2;
   grid-row: span 2;
 }
 
+/* Styling for the author section */
 .author {
   padding: 50px;
   display: flex;
@@ -114,6 +131,9 @@ main {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  /* Styling for the h2 elements within the author section */
+  /* Styling for the paragraph elements within the author section */
+  /* Styling for the img elements within the author section */
 }
 .author h2 {
   text-align: center;
@@ -128,6 +148,7 @@ main {
   width: 200px;
 }
 
+/* Styling for the footer */
 .footer {
   background-color: #14181d;
   color: white;
@@ -136,184 +157,210 @@ main {
   margin-top: auto;
 }
 
+/* Media query for screen widths of 1024px and below */
 @media screen and (width <= 1024px) {
+  /* Adjustments for the header image */
   header img {
     width: 80px;
   }
+  /* Adjustments for the navigation bar */
   .navbar {
     width: 100vw;
     display: flex;
     justify-content: center;
     padding: 10px;
   }
+  /* Adjustments for the main content area */
   main {
     margin: 20px auto;
     width: 85%;
     background-color: white;
     border: 2px solid black;
+    /* Adjustments for the top section within the main content area */
+    /* Adjustments for the column content within the main content area */
+    /* Adjustments for the grid images within the main content area */
+    /* Adjustments for the author section */
   }
-  .topsection {
+  main .topsection {
     padding: 30px;
   }
-  .topsection h1,
-  .topsection h2 {
+  main .topsection h1,
+  main .topsection h2 {
     text-align: center;
     margin-top: -10px;
   }
-  .topsection p {
+  main .topsection p {
     font-size: 16px;
     margin-bottom: -20px;
   }
-  .columncontent {
+  main .columncontent {
     padding: 30px;
     -moz-column-count: auto;
          column-count: auto;
     margin-bottom: 20px;
   }
-  .columncontent h2 {
+  main .columncontent h2 {
     margin: 30px auto;
     text-align: center;
   }
-  .gridimages {
+  main .gridimages {
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "top-left  top-right" "bottom-left bottom-right";
+    grid-template-areas: "top-left top-right" "bottom-left bottom-right";
     margin-top: 20px;
+    /* Adjustments for the img elements within the grid images */
+    /* Specific adjustments for the first img element within the grid images */
+    /* Specific adjustments for the second img element within the grid images */
+    /* Specific adjustments for the third img element within the grid images */
+    /* Specific adjustments for the fourth img element within the grid images */
+    /* Hide the fifth img element within the grid images */
   }
-  .gridimages img {
+  main .gridimages img {
     width: 100%;
     height: 100%;
   }
-  .gridimages img:nth-child(1) {
+  main .gridimages img:nth-child(1) {
     grid-area: top-left;
   }
-  .gridimages img:nth-child(2) {
+  main .gridimages img:nth-child(2) {
     grid-area: top-right;
   }
-  .gridimages img:nth-child(3) {
+  main .gridimages img:nth-child(3) {
     grid-area: bottom-left;
   }
-  .gridimages img:nth-child(4) {
+  main .gridimages img:nth-child(4) {
     grid-area: bottom-right;
   }
-  .gridimages img:nth-child(5) {
+  main .gridimages img:nth-child(5) {
     display: none;
   }
-  .author {
+  main .author {
     padding: 30px;
     gap: 30px;
   }
-  .author h2 {
+  main .author h2 {
     text-align: left;
   }
-  .author p {
+  main .author p {
     margin-top: 20px;
     text-align: left;
-    margin: 0;
   }
-  .author img {
-    border-radius: 50%;
+  main .author img {
     width: 200px;
   }
-  .footer {
-    background-color: #14181d;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
 }
+/* Media query for screen widths of 720px and below */
 @media screen and (width <= 720px) {
+  /* Adjustments for the header image */
   header img {
     width: 80px;
   }
+  /* Adjustments for the navigation bar */
   .navbar {
     width: 100vw;
     padding: 10px;
   }
+  /* Adjustments for the main content area */
   main {
-    margin: 10px auto;
+    margin: 20px auto;
     width: 100%;
     background-color: white;
     border: 2px solid black;
+    /* Adjustments for the top section within the main content area */
+    /* Adjustments for the column content within the main content area */
+    /* Adjustments for the grid images within the main content area */
+    /* Adjustments for the author section */
   }
-  .topsection h1,
-  .topsection h2 {
+  main .topsection {
+    padding: 20px 20px;
+  }
+  main .topsection h1,
+  main .topsection h2 {
     text-align: center;
   }
-  .topsection h1 {
+  main .topsection h1 {
     font-size: 70px;
   }
-  .topsection h2 {
+  main .topsection h2 {
     font-size: 54px;
     margin-bottom: 20px;
   }
-  .topsection p {
+  main .topsection p {
     font-size: 16px;
     margin-bottom: -20px;
   }
-  .columncontent {
-    padding: 10px;
+  main .columncontent {
+    padding: 20px;
     -moz-column-count: auto;
          column-count: auto;
     margin-bottom: 20px;
   }
-  .columncontent h2 {
-    margin: 30px auto;
+  main .columncontent h2 {
+    margin: 20px auto;
   }
-  .gridimages {
+  main .gridimages {
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr;
     grid-template-areas: "top-left" "top-right" "bottom-left" "bottom-right";
     margin-top: 20px;
+    /* Adjustments for the img elements within the grid images */
+    /* Specific adjustments for the first img element within the grid images */
+    /* Specific adjustments for the second img element within the grid images */
+    /* Specific adjustments for the third img element within the grid images */
+    /* Specific adjustments for the fourth img element within the grid images */
+    /* Hide the fifth img element within the grid images */
   }
-  .gridimages img {
+  main .gridimages img {
     width: 100%;
     height: 100%;
   }
-  .gridimages img:nth-child(1) {
+  main .gridimages img:nth-child(1) {
     grid-area: top-left;
-    width: 100%;
-    height: 100%;
   }
-  .gridimages img:nth-child(2) {
+  main .gridimages img:nth-child(2) {
     grid-area: top-right;
   }
-  .gridimages img:nth-child(3) {
+  main .gridimages img:nth-child(3) {
     grid-area: bottom-left;
   }
-  .gridimages img:nth-child(4) {
+  main .gridimages img:nth-child(4) {
     grid-area: bottom-right;
   }
-  .gridimages img:nth-child(5) {
+  main .gridimages img:nth-child(5) {
     display: none;
   }
-  .author {
+  main .author {
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
     text-align: left;
     width: 100%;
+    /* Adjustments for the h2 elements within the author section */
+    /* Adjustments for the paragraph elements within the author section */
+    /* Adjustments for the img elements within the author section */
   }
-  .author h2 {
+  main .author h2 {
     text-align: center;
   }
-  .author p {
+  main .author p {
     margin-top: 20px;
     text-align: left;
   }
-  .author img {
-    border-radius: 50%;
+  main .author img {
     width: 200px;
   }
 }
+/* Media query for screen widths of 540px and below */
 @media screen and (width <= 540px) {
+  /* Adjustments for the navigation bar */
   .navbar {
     width: 100vw;
-    display: flex;
     justify-content: center;
+    /* Adjustments for the unordered list within the navigation bar */
+    /* Adjustments for the list items within the unordered list */
   }
   .navbar ul {
     list-style: none;
@@ -326,86 +373,92 @@ main {
     margin: 10px 20px;
     font-family: "Josefin Sans", serif;
   }
+  /* Adjustments for the header image */
   header img {
     width: 80px;
   }
-  .navbar {
-    width: 100vw;
-    padding: 10px;
-  }
+  /* Adjustments for the main content area */
   main {
     margin: 20px auto;
     width: 100%;
     background-color: white;
     border: 2px solid black;
+    /* Adjustments for the top section within the main content area */
+    /* Adjustments for the column content within the main content area */
+    /* Adjustments for the grid images within the main content area */
+    /* Adjustments for the author section */
   }
-  .topsection h1,
-  .topsection h2 {
+  main .topsection h1,
+  main .topsection h2 {
     text-align: center;
   }
-  .topsection h1 {
+  main .topsection h1 {
     font-size: 70px;
   }
-  .topsection h2 {
+  main .topsection h2 {
     font-size: 54px;
     margin-bottom: 20px;
   }
-  .topsection p {
+  main .topsection p {
     font-size: 16px;
     margin-bottom: -20px;
   }
-  .columncontent {
+  main .columncontent {
     padding: 20px;
     -moz-column-count: auto;
          column-count: auto;
     margin-bottom: 20px;
   }
-  .columncontent h2 {
+  main .columncontent h2 {
     margin: 20px auto;
   }
-  .gridimages {
+  main .gridimages {
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr;
     grid-template-areas: "top-left" "top-right" "bottom-left" "bottom-right";
     margin-top: 20px;
     padding: 0;
+    /* Adjustments for the img elements within the grid images */
+    /* Specific adjustments for the first img element within the grid images */
+    /* Specific adjustments for the second img element within the grid images */
+    /* Specific adjustments for the third img element within the grid images */
+    /* Specific adjustments for the fourth img element within the grid images */
+    /* Hide the fifth img element within the grid images */
   }
-  .gridimages img {
+  main .gridimages img {
     width: 100%;
     height: 100%;
   }
-  .gridimages img:nth-child(1) {
+  main .gridimages img:nth-child(1) {
     grid-area: top-left;
-    width: 100%;
-    height: 100%;
   }
-  .gridimages img:nth-child(2) {
+  main .gridimages img:nth-child(2) {
     grid-area: top-right;
   }
-  .gridimages img:nth-child(3) {
+  main .gridimages img:nth-child(3) {
     grid-area: bottom-left;
   }
-  .gridimages img:nth-child(4) {
+  main .gridimages img:nth-child(4) {
     grid-area: bottom-right;
   }
-  .gridimages img:nth-child(5) {
+  main .gridimages img:nth-child(5) {
     display: none;
   }
-  .author {
+  main .author {
     display: flex;
     flex-direction: column-reverse;
     text-align: left;
     width: 100%;
     gap: 0;
+    /* Adjustments for the paragraph elements within the author section */
+    /* Adjustments for the img elements within the author section */
   }
-  .author p {
-    margin-top: 20px;
+  main .author p {
     margin: 0 auto;
     width: 420px;
   }
-  .author img {
-    border-radius: 50%;
+  main .author img {
     width: 200px;
   }
 }/*# sourceMappingURL=sass.css.map */
