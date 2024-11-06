@@ -158,7 +158,7 @@ main .gridimages img:nth-child(1) {
 }
 
 /* Media query for screen widths of 1024px and below */
-@media screen and (width <= 1024px) {
+@media screen and (width <= 1025px) {
   /* Adjustments for the header image */
   header img {
     width: 80px;

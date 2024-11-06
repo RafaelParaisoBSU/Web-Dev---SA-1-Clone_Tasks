@@ -49,6 +49,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    box-shadow: 20px 0px 20px $darkblue;
 
     /* Style for the img element within the header */
     img {
@@ -179,7 +180,7 @@ main {
 }
 
 /* Media query for screen widths of 1024px and below */
-@media screen and (width <=1024px) {
+@media screen and (width <=1025px) {
 
     /* Adjustments for the header image */
     header img {
