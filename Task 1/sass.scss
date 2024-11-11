@@ -41,7 +41,6 @@ body {
         margin-bottom: 10px;
     }
 }
-
 /* Styling for the header */
 header {
     background-color: $background;
@@ -107,6 +106,12 @@ main {
     .topsection {
         padding: 50px;
 
+        .subheader p{
+            /* Specific style for the subheader within top section content */
+            font-family: 'Josefin Sans', serif;
+            font-size: 3em;
+        }
+
         /* Styling for the paragraph elements within the top section */
         p {
             font-size: 32px;
@@ -138,6 +143,8 @@ main {
             }
         }
     }
+
+
 }
 
 /* Styling for the author section */

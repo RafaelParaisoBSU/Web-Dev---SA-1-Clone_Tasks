@@ -97,6 +97,11 @@ main .topsection {
   padding: 50px;
   /* Styling for the paragraph elements within the top section */
 }
+main .topsection .subheader p {
+  /* Specific style for the subheader within top section content */
+  font-family: "Josefin Sans", serif;
+  font-size: 3em;
+}
 main .topsection p {
   font-size: 32px;
   margin-bottom: 20px;
