@@ -14,6 +14,7 @@ $content: #FFFFFF;
 body {
     background-color: $background;
     overflow-x: hidden;
+    line-height: 1.5;
 
     /* Font styles for h1 and h2 elements */
     h1,
@@ -26,21 +27,10 @@ body {
     h3 {
         font-family: 'Josefin Sans', serif;
         font-size: 16px;
-        line-height: 1.5;
-    }
-
-    /* Specific style for h1 elements */
-    h1 {
-        font-size: 96px;
-    }
-
-    /* Specific style for h2 elements */
-    h2 {
-        font-size: 70px;
     }
 }
 
-/* Styling for the header */
+/* Font styles for Header */
 header {
     background-color: $background;
     display: flex;
@@ -50,19 +40,17 @@ header {
 
     /* Style for the img element within the header */
     img {
-        max-width: 100%;
         height: auto;
         width: 200px;
         margin-top: 20px;
     }
 }
 
-/* Styling for the navigation bar */
+/* Font styles for Navigation Bar */
 .navbar {
     width: 100vw;
     display: flex;
     justify-content: center;
-    padding: 10px;
 
     /* Styling for the unordered list within the navigation bar */
     ul {
@@ -86,7 +74,6 @@ header {
         /* Hover state for the anchor tags */
         &:hover {
             background-color: white;
-            padding: 16px;
         }
     }
 }
@@ -102,10 +89,14 @@ main {
     .topsection {
         padding: 50px;
 
+        h1 {
+            font-size: 92px;
+        }
+
         .subheader p {
             /* Specific style for the subheader within top section content */
             font-family: 'Josefin Sans', serif;
-            font-size: 3em;
+            font-size: 64px;
         }
 
         /* Styling for the paragraph elements within the top section */
@@ -116,8 +107,12 @@ main {
 
     /* Styling for the column content within the main content area */
     .columncontent {
-        padding: 0px 50px;
+        margin: auto 50px;
         column-count: 3;
+
+        h2 {
+            font-size: 48px;
+        }
     }
 
     /* Styling for the grid images within the main content area */
@@ -139,21 +134,20 @@ main {
         }
     }
 
-
 }
 
 /* Styling for the author section */
 .author {
-    padding: 50px;
+    margin: 50px;
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
     justify-content: center;
     align-items: center;
     gap: 50px;
 
     /* Styling for the h2 elements within the author section */
     h2 {
+        font-size: 48px;
         text-align: center;
     }
 
@@ -161,7 +155,6 @@ main {
     p {
         margin-top: 20px;
         text-align: left;
-        margin: 0;
     }
 
     /* Styling for the img elements within the author section */
@@ -175,13 +168,16 @@ main {
 .footer {
     background-color: $footer;
     color: white;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
-    margin-top: auto;
 }
 
-/* Media query for screen widths of 1024px and below */
-@media screen and (width <=1025px) {
+@media screen and (width <=1024px) {
+
+    /* Adjustments for the body */
+    body {
+        line-height: 1.5;
+    }
 
     /* Adjustments for the header image */
     header img {
@@ -190,26 +186,36 @@ main {
 
     /* Adjustments for the navigation bar */
     .navbar {
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        margin-bottom: -30px;
+
+        /* Styling for the unordered list within the navigation bar */
+        ul {
+            margin: 30px auto;
+        }
+
+        /* Styling for the list items within the unordered list */
+        li {
+            display: inline;
+            margin: 0px 30px;
+        }
+
+        /* Styling for the anchor tags within the list items */
+        a {
+            padding: 30px 30px;
+        }
     }
 
     /* Adjustments for the main content area */
     main {
-        margin: 30px auto;
-        width: 85%;
-        background-color: white;
-        border: 2px solid black;
+        margin: 0 auto;
+        width: calc(100% - 120px);
+        padding: 0px;
 
         /* Adjustments for the top section within the main content area */
         .topsection {
-            padding: 0px 30px;
-            margin-top: 30px;
+            margin: auto 30px;
+            padding: 0;
 
-            h1,
-            h2 {
+            h1 {
                 text-align: center;
             }
 
@@ -219,14 +225,15 @@ main {
 
             .subheader p {
                 text-align: center;
+                margin-bottom: 30px;
             }
         }
 
         /* Adjustments for the column content within the main content area */
         .columncontent {
-            padding: 0px 30px;
             column-count: auto;
             margin-bottom: 30px;
+            margin: auto 30px;
 
             h2 {
                 margin: 30px auto;
@@ -238,12 +245,12 @@ main {
         .gridimages {
             display: grid;
             justify-content: center;
+            margin-top: 30px;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             grid-template-areas:
                 "top-left top-right"
                 "bottom-left bottom-right";
-            margin-top: 30px;
 
             /* Adjustments for the img elements within the grid images */
             img {
@@ -279,8 +286,7 @@ main {
 
         /* Adjustments for the author section */
         .author {
-            padding: 30px;
-            gap: 30px;
+            margin: 30px;
 
             h2 {
                 text-align: left;
@@ -290,63 +296,54 @@ main {
                 margin-top: 30px;
                 text-align: left;
             }
+        }
 
-            img {
-                width: 200px;
-            }
+        /* Styling for the footer */
+        .footer {
+            padding: 30px;
         }
     }
 }
 
-/* Media query for screen widths of 720px and below */
 @media screen and (width <=720px) {
-
-    /* Adjustments for the header image */
-    header img {
-        width: 80px;
-    }
 
     /* Adjustments for the navigation bar */
     .navbar {
-        width: 100vw;
-        padding: 20px;
+
+        /* Styling for the unordered list within the navigation bar */
+        ul {
+            margin: 20px auto;
+        }
+
+        /* Styling for the list items within the unordered list */
+        li {
+            margin: 0px 20px;
+        }
+
+        /* Styling for the anchor tags within the list items */
+        a {
+            padding: 30px 20px;
+        }
     }
 
     /* Adjustments for the main content area */
     main {
-        margin: 20px auto;
         width: 100%;
-        background-color: white;
-        border: 2px solid black;
 
         /* Adjustments for the top section within the main content area */
         .topsection {
-            padding: 20px 20px;
+            margin: auto;
+            margin: 0 20px;
 
-            h1,
-            h2 {
-                text-align: center;
-            }
-
-            h1 {
-                font-size: 70px;
-            }
-
-            h2 {
-                font-size: 54px;
+            .subheader p {
                 margin-bottom: 20px;
-            }
-
-            p {
-                font-size: 16px;
             }
         }
 
         /* Adjustments for the column content within the main content area */
         .columncontent {
-            padding: 20px;
-            column-count: auto;
             margin-bottom: 20px;
+            margin: 0 20px;
 
             h2 {
                 margin: 20px auto;
@@ -355,45 +352,19 @@ main {
 
         /* Adjustments for the grid images within the main content area */
         .gridimages {
-            display: grid;
-            justify-content: center;
+            margin-top: 20px;
             grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
             grid-template-areas:
                 "top-left"
                 "top-right"
                 "bottom-left"
                 "bottom-right";
-            margin-top: 20px;
 
             /* Adjustments for the img elements within the grid images */
             img {
                 width: 100%;
                 height: 100%;
-            }
-
-            /* Specific adjustments for the first img element within the grid images */
-            img:nth-child(1) {
-                grid-area: top-left;
-            }
-
-            /* Specific adjustments for the second img element within the grid images */
-            img:nth-child(2) {
-                grid-area: top-right;
-            }
-
-            /* Specific adjustments for the third img element within the grid images */
-            img:nth-child(3) {
-                grid-area: bottom-left;
-            }
-
-            /* Specific adjustments for the fourth img element within the grid images */
-            img:nth-child(4) {
-                grid-area: bottom-right;
-            }
-
-            /* Hide the fifth img element within the grid images */
-            img:nth-child(5) {
-                display: none;
             }
         }
 
@@ -401,151 +372,114 @@ main {
         .author {
             display: flex;
             flex-direction: column-reverse;
-            gap: 20px;
-            text-align: left;
-            width: 100%;
+            margin: 20px;
 
-            /* Adjustments for the h2 elements within the author section */
             h2 {
                 text-align: center;
             }
 
-            /* Adjustments for the paragraph elements within the author section */
             p {
                 margin-top: 20px;
                 text-align: left;
             }
+        }
 
-            /* Adjustments for the img elements within the author section */
-            img {
-                width: 200px;
-            }
+        /* Styling for the footer */
+        .footer {
+            padding: 20px;
         }
     }
 }
 
-/* Media query for screen widths of 540px and below */
 @media screen and (width <=540px) {
+    /* Adjustment for the body styling */
+    body {
+        line-height: 1.25;
+    }
 
     /* Adjustments for the navigation bar */
     .navbar {
-        width: 100vw;
-        justify-content: center;
+        margin-bottom: 12px;
 
-        /* Adjustments for the list items within the unordered list */
-        li {
-            display: inline;
-            margin: 10px 20px;
-            font-family: 'Josefin Sans', serif;
+        /* Styling for the unordered list within the navigation bar */
+        ul {
+            margin: 12px auto;
         }
-    }
 
-    /* Adjustments for the header image */
-    header img {
-        width: 80px;
+        /* Styling for the list items within the unordered list */
+        li {
+            margin: 0px 12px;
+        }
+
+        /* Styling for the anchor tags within the list items */
+        a {
+            padding: 12px 12px;
+        }
     }
 
     /* Adjustments for the main content area */
     main {
-        margin: 20px auto;
         width: 100%;
-        background-color: white;
-        border: 2px solid black;
+
+        /* Adjustments for the top section within the main content area */
+        .topsection {
+            margin: 12px 12px;
+
+            h1 {
+                font-size: 3em;
+            }
+
+            .subheader p {
+                font-size: 3em;
+                margin-bottom: 12px;
+            }
+        }
 
         /* Adjustments for the column content within the main content area */
         .columncontent {
-            padding: 20px;
-            column-count: auto;
-            margin-bottom: 20px;
+            margin-bottom: 12px;
+            margin: 0 12px;
 
             h2 {
-                margin: 20px auto;
+                margin: 12px auto;
             }
         }
 
         /* Adjustments for the grid images within the main content area */
         .gridimages {
-            display: grid;
-            justify-content: center;
-            grid-template-columns: 1fr;
-            grid-template-areas:
-                "top-left"
-                "top-right"
-                "bottom-left"
-                "bottom-right";
-            margin-top: 20px;
-            padding: 0;
-
-            /* Adjustments for the img elements within the grid images */
-            img {
-                width: 100%;
-                height: 100%;
-            }
-
-            /* Specific adjustments for the first img element within the grid images */
-            img:nth-child(1) {
-                grid-area: top-left;
-            }
-
-            /* Specific adjustments for the second img element within the grid images */
-            img:nth-child(2) {
-                grid-area: top-right;
-            }
-
-            /* Specific adjustments for the third img element within the grid images */
-            img:nth-child(3) {
-                grid-area: bottom-left;
-            }
-
-            /* Specific adjustments for the fourth img element within the grid images */
-            img:nth-child(4) {
-                grid-area: bottom-right;
-            }
-
-            /* Hide the fifth img element within the grid images */
-            img:nth-child(5) {
-                display: none;
-            }
+            margin-top: 12px;
         }
 
         /* Adjustments for the author section */
         .author {
-            display: flex;
-            flex-direction: column-reverse;
-            text-align: left;
-            width: 100%;
-            gap: 0;
+            margin: 12px;
 
-            /* Adjustments for the paragraph elements within the author section */
+            h2 {
+                text-align: center;
+            }
+
             p {
-                margin: 12px auto;
+                margin-top: 12px;
             }
+        }
 
-            /* Adjustments for the img elements within the author section */
-            img {
-                width: 200px;
-            }
+        /* Styling for the footer */
+        .footer {
+            padding: 12px;
         }
     }
 }
 
 @media screen and (width <=360px) {
-    .topsection {
-        padding: 0px;
 
-        h1 {
-            font-size: 1em;
-        }
-
-        .subheader p {
-            /* Specific style for the subheader within top section content */
-            font-size: 3em;
-        }
+    body {
+        line-height: 1.25;
     }
 
     /* Adjustments for the navigation bar */
     .navbar {
-        width: 100vw;
+        margin-bottom: 10px;
+        margin: 0 auto;
 
         /* Styling for the unordered list within the navigation bar */
         ul {
@@ -560,57 +494,6 @@ main {
         /* Styling for the anchor tags within the list items */
         a {
             padding: 0px;
-        }
-    }
-
-    /* Adjustments for the main content area */
-    main {
-        margin: 12px auto;
-        width: 100%;
-        background-color: white;
-        border: 2px solid black;
-
-        h1 {
-            font-size: 3em;
-        }
-
-
-        /* Adjustments for the top section within the main content area */
-        .topsection {
-
-            h1 {
-                font-size: 3em;
-            }
-            
-            .subheader p {
-                font-size: 3em;
-                line-height: normal;
-                margin-bottom: 12px;
-            }
-        }
-
-        /* Adjustments for the grid images within the main content area */
-        .gridimages {
-            margin-top: 12px;
-            padding: 0;
-        }
-
-        /* Adjustments for the author section */
-        .author {
-
-            h2 {
-                font-size: 3em;
-            }
-            /* Adjustments for the paragraph elements within the author section */
-            p {
-                margin: 12px auto;
-            }
-
-            /* Adjustments for the img elements within the author section */
-            img {
-                width: 200px;
-        
-            }
         }
     }
 }
