@@ -32,22 +32,21 @@ body {
     /* Specific style for h1 elements */
     h1 {
         font-size: 96px;
-        margin-bottom: 10px;
     }
 
     /* Specific style for h2 elements */
     h2 {
         font-size: 70px;
-        margin-bottom: 10px;
     }
 }
+
 /* Styling for the header */
 header {
     background-color: $background;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 
     /* Style for the img element within the header */
     img {
@@ -68,16 +67,13 @@ header {
     /* Styling for the unordered list within the navigation bar */
     ul {
         list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        gap: 20px;
+        margin: 20px auto;
     }
 
     /* Styling for the list items within the unordered list */
     li {
         display: inline;
-        margin: 20px 50px;
+        margin: 0px 50px;
         font-family: 'Josefin Sans', serif;
     }
 
@@ -106,7 +102,7 @@ main {
     .topsection {
         padding: 50px;
 
-        .subheader p{
+        .subheader p {
             /* Specific style for the subheader within top section content */
             font-family: 'Josefin Sans', serif;
             font-size: 3em;
@@ -115,15 +111,13 @@ main {
         /* Styling for the paragraph elements within the top section */
         p {
             font-size: 32px;
-            margin-bottom: 20px;
         }
     }
 
     /* Styling for the column content within the main content area */
     .columncontent {
-        padding: 50px;
+        padding: 0px 50px;
         column-count: 3;
-        margin-top: -50px;
     }
 
     /* Styling for the grid images within the main content area */
@@ -131,6 +125,7 @@ main {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr 1fr;
+        margin-top: 50px;
 
         /* Styling for the img elements within the grid images */
         img {
@@ -198,37 +193,40 @@ main {
         width: 100vw;
         display: flex;
         justify-content: center;
-        padding: 10px;
+        margin-bottom: -30px;
     }
 
     /* Adjustments for the main content area */
     main {
-        margin: 20px auto;
+        margin: 30px auto;
         width: 85%;
         background-color: white;
         border: 2px solid black;
 
         /* Adjustments for the top section within the main content area */
         .topsection {
-            padding: 30px;
+            padding: 0px 30px;
+            margin-top: 30px;
 
             h1,
             h2 {
                 text-align: center;
-                margin-top: -10px;
             }
 
             p {
                 font-size: 16px;
-                margin-bottom: -20px;
+            }
+
+            .subheader p {
+                text-align: center;
             }
         }
 
         /* Adjustments for the column content within the main content area */
         .columncontent {
-            padding: 30px;
+            padding: 0px 30px;
             column-count: auto;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
 
             h2 {
                 margin: 30px auto;
@@ -245,7 +243,7 @@ main {
             grid-template-areas:
                 "top-left top-right"
                 "bottom-left bottom-right";
-            margin-top: 20px;
+            margin-top: 30px;
 
             /* Adjustments for the img elements within the grid images */
             img {
@@ -289,7 +287,7 @@ main {
             }
 
             p {
-                margin-top: 20px;
+                margin-top: 30px;
                 text-align: left;
             }
 
@@ -311,7 +309,7 @@ main {
     /* Adjustments for the navigation bar */
     .navbar {
         width: 100vw;
-        padding: 10px;
+        padding: 20px;
     }
 
     /* Adjustments for the main content area */
@@ -323,7 +321,8 @@ main {
 
         /* Adjustments for the top section within the main content area */
         .topsection {
-        padding: 20px 20px;
+            padding: 20px 20px;
+
             h1,
             h2 {
                 text-align: center;
@@ -340,7 +339,6 @@ main {
 
             p {
                 font-size: 16px;
-                margin-bottom: -20px;
             }
         }
 
@@ -434,14 +432,6 @@ main {
         width: 100vw;
         justify-content: center;
 
-        /* Adjustments for the unordered list within the navigation bar */
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
         /* Adjustments for the list items within the unordered list */
         li {
             display: inline;
@@ -461,29 +451,6 @@ main {
         width: 100%;
         background-color: white;
         border: 2px solid black;
-
-        /* Adjustments for the top section within the main content area */
-        .topsection {
-
-            h1,
-            h2 {
-                text-align: center;
-            }
-
-            h1 {
-                font-size: 70px;
-            }
-
-            h2 {
-                font-size: 54px;
-                margin-bottom: 20px;
-            }
-
-            p {
-                font-size: 16px;
-                margin-bottom: -20px;
-            }
-        }
 
         /* Adjustments for the column content within the main content area */
         .columncontent {
@@ -551,13 +518,98 @@ main {
 
             /* Adjustments for the paragraph elements within the author section */
             p {
-                margin: 0 auto;
-                width: 420px;
+                margin: 12px auto;
             }
 
             /* Adjustments for the img elements within the author section */
             img {
                 width: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (width <=360px) {
+    .topsection {
+        padding: 0px;
+
+        h1 {
+            font-size: 1em;
+        }
+
+        .subheader p {
+            /* Specific style for the subheader within top section content */
+            font-size: 3em;
+        }
+    }
+
+    /* Adjustments for the navigation bar */
+    .navbar {
+        width: 100vw;
+
+        /* Styling for the unordered list within the navigation bar */
+        ul {
+            margin: 12px auto;
+        }
+
+        /* Styling for the list items within the unordered list */
+        li {
+            margin: 0px 12px;
+        }
+
+        /* Styling for the anchor tags within the list items */
+        a {
+            padding: 0px;
+        }
+    }
+
+    /* Adjustments for the main content area */
+    main {
+        margin: 12px auto;
+        width: 100%;
+        background-color: white;
+        border: 2px solid black;
+
+        h1 {
+            font-size: 3em;
+        }
+
+
+        /* Adjustments for the top section within the main content area */
+        .topsection {
+
+            h1 {
+                font-size: 3em;
+            }
+            
+            .subheader p {
+                font-size: 3em;
+                line-height: normal;
+                margin-bottom: 12px;
+            }
+        }
+
+        /* Adjustments for the grid images within the main content area */
+        .gridimages {
+            margin-top: 12px;
+            padding: 0;
+        }
+
+        /* Adjustments for the author section */
+        .author {
+
+            h2 {
+                font-size: 3em;
+            }
+            /* Adjustments for the paragraph elements within the author section */
+            p {
+                margin: 12px auto;
+            }
+
+            /* Adjustments for the img elements within the author section */
+            img {
+                width: 200px;
+        
             }
         }
     }
