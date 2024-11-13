@@ -186,7 +186,8 @@ main {
 
     /* Adjustments for the navigation bar */
     .navbar {
-
+        display: flex;
+        
         /* Styling for the unordered list within the navigation bar */
         ul {
             margin: 30px auto;

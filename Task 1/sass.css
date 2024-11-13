@@ -160,6 +160,7 @@ main .gridimages img:nth-child(1) {
   }
   /* Adjustments for the navigation bar */
   .navbar {
+    display: flex;
     /* Styling for the unordered list within the navigation bar */
     /* Styling for the list items within the unordered list */
     /* Styling for the anchor tags within the list items */
