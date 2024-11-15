@@ -10,7 +10,7 @@
 }
 
 body {
-  background: linear-gradient(180deg, #4DCCBD, #231651, #070410);
+  background: linear-gradient(180deg, #231651, #4DCCBD, #070410);
   /* Apply font styles to h1 and button elements */
   /* Apply font styles to paragraph elements */
 }
@@ -30,7 +30,7 @@ body p {
   border: 2px solid black;
   padding: 0px 16px;
   margin-bottom: 48px;
-  box-shadow: 10px 0px 20px #070410;
+  box-shadow: 10px 0px 10px 20px #4DCCBD;
   background-color: #070410;
   width: 100%;
   /* Style for the h1 element within the navigation bar */

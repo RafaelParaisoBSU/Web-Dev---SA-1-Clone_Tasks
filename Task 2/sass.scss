@@ -23,7 +23,7 @@ $yellow: #EEF36A;
 }
 
 body {
-    background: linear-gradient(180deg, $lightblue, $blue, $darkblue);
+    background: linear-gradient(180deg,$blue, $lightblue , $darkblue);
 
     /* Apply font styles to h1 and button elements */
     h1,
@@ -45,7 +45,7 @@ body {
     border: 2px solid black;
     padding: 0px 16px;
     margin-bottom: 48px;
-    box-shadow: 10px 0px 20px $darkblue;
+    box-shadow: 10px 0px 10px 20px $lightblue;
     background-color: $darkblue;
     width: 100%;
 
