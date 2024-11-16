@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Tasks</title>
+    <link rel="stylesheet" href="gridstylequiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="grid.js"></script>
+</head>
+
+<body>
+    <header class="header" id="Home">
+        <h1>Work<span class="Assistant">Assistant</span></h1>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input" />
+            <button class="search-button">Search</button>
+        </div>
+    </header>
+    <section class="sidebar">
+        <a href="grid.html">Home</a>
+        <a href="gridgallery.html">Gallery</a>
+        <a href="#products">Products</a>
+        <a href="gridquiz.html">Quiz</a>
+    </section>
+    <main class="main">
+        <div class="quiz-container">
+            <h1>Quiz</h1>
+            <div class="question-container">
+                <div class="question" id="question1">
+                    <h3>Question 1:</h3>
+                    <p>What is the capital of France?</p>
+                    <ul>
+                        <li><input type="radio" name="q1" id="q1a" value="a"><label for="q1a">Paris</label></li>
+                        <li><input type="radio" name="q1" id="q1b" value="b"><label for="q1b">Berlin</label></li>
+                        <li><input type="radio" name="q1" id="q1c" value="c"><label for="q1c">Madrid</label></li>
+                    </ul>
+                </div>
+    
+                <div class="question" id="question2">
+                    <h3>Question 2:</h3>
+                    <p>What is 5 + 3?</p>
+                    <ul>
+                        <li><input type="radio" name="q2" id="q2a" value="a"><label for="q2a">7</label></li>
+                        <li><input type="radio" name="q2" id="q2b" value="b"><label for="q2b">8</label></li>
+                        <li><input type="radio" name="q2" id="q2c" value="c"><label for="q2c">9</label></li>
+                    </ul>
+                </div>
+    
+                <div class="question" id="question3">
+                    <h3>Question 3:</h3>
+                    <p>Who wrote 'Hamlet'?</p>
+                    <ul>
+                        <li><input type="radio" name="q3" id="q3a" value="a"><label for="q3a">Shakespeare</label></li>
+                        <li><input type="radio" name="q3" id="q3b" value="b"><label for="q3b">Tolstoy</label></li>
+                        <li><input type="radio" name="q3" id="q3c" value="c"><label for="q3c">Hemingway</label></li>
+                    </ul>
+                </div>
+    
+                <div class="question" id="question4">
+                    <h3>Question 4:</h3>
+                    <p>What is the boiling point of water?</p>
+                    <ul>
+                        <li><input type="radio" name="q4" id="q4a" value="a"><label for="q4a">100°C</label></li>
+                        <li><input type="radio" name="q4" id="q4b" value="b"><label for="q4b">90°C</label></li>
+                        <li><input type="radio" name="q4" id="q4c" value="c"><label for="q4c">120°C</label></li>
+                    </ul>
+                </div>
+    
+                <div class="question" id="question5">
+                    <h3>Question 5:</h3>
+                    <p>Which planet is closest to the Sun?</p>
+                    <ul>
+                        <li><input type="radio" name="q5" id="q5a" value="a"><label for="q5a">Mercury</label></li>
+                        <li><input type="radio" name="q5" id="q5b" value="b"><label for="q5b">Venus</label></li>
+                        <li><input type="radio" name="q5" id="q5c" value="c"><label for="q5c">Earth</label></li>
+                    </ul>
+                </div>
+            </div>
+            <button type="submit">Submit Quiz</button>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weston's Chocolate Box</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navcontent">
+                <div class="navlogo">
+                    <img src="Images/west2.png" alt="">
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#SignUp">Sign Up</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navlinks">
+                    <ul>
+                        <li><a href="#Collections">Collections</a></li>
+                        <li><a href="#Deals">Deals</a></li>
+                        <li><a href="#Specials">Specials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hero" class="Home">
+        <div class="herocontainer">
+            <div class="herocontent">
+                <img src="Images/heroimage.jpg" alt="">
+                <h2>Weston's</h2>
+                <h3>Each bite's as sweet as the next.</h3>
+                <p>Welcome to Westons, where chocolate is more than just a treat—it's an experience. We craft our
+                    chocolates with passion, blending the finest ingredients to create flavors that delight the senses
+                    and bring joy to every moment. Whether you’re savoring a quiet indulgence or sharing the sweetness
+                    with loved ones, Westons promises a taste of pure bliss in every bite.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="logosslider">
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="Images/godiva-chocolatier.svg" alt="">
+                <img src="Images/cadbury-logo-black-and-white.png" alt="">
+                <img src="Images/fererro.svg" alt="">
+                <img src="Images/hersheys.svg" alt="">
+                <img src="Images/Lindt_Logo_HR.jpg" alt="">
+                <img src="Images/Nestle.png" alt="">
+                <img src="Images/patchi.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="collections" id="Collections">
+        <h1>Special Collections</h1>
+        <div class="collectionsgrid">
+            <div class="collectionscontainer">
+                <div class="productimage">
+                    <img src="Images/productimage1.jpg" alt="">
+                </div>
+                <h2>Weston's Deluxe Bar</h2>
+                <p>A rich and indulgent chocolate bar, perfect for those who crave a smooth, velvety taste.</p>
+                <h3>2.99$</h3>
+            </div>
+            <div class="collectionscontainer">
+                <div class="productimage">
+                    <img src="Images/productimage2.jpg" alt="">
+                </div>
+                <h2>Weston's Chunky Delight</h2>
+                <p>A chunky chocolate bar loaded with nuts and crunchy pieces, a satisfying bite in every piece.</p>
+                <h3>1.99$</h3>
+            </div>
+            <div class="collectionscontainer">
+                <div class="productimage">
+                    <img src="Images/productimage3.jpg" alt="">
+                </div>
+                <h2>Weston's Mini Bar</h2>
+                <p> A compact chocolate treat that's small in size but big on flavor, ideal for a quick, sweet indulgence.</p>
+                <h3>0.99$</h3>
+            </div>
+            <div class="collectionscontainer">
+                <div class="productimage">
+                    <img src="Images/productimage4.jpg" alt="">
+                </div>
+                <h2>Weston's Choco Wafer</h2>
+                <p>Crispy wafer layers coated in smooth chocolate, a delightful combination of crunch and sweetness.</p>
+                <h3>0.99$</h3>
+            </div>
+        </div>
+        <button class="viewmore">View More</button>
+    </section>
+    <section class="specials" id="Specials">
+        <div class="specialsgrid">
+            <div class="specialscontainer" onmouseover="changeImage(this)" onmouseout="resetImage(this)">
+                <img src="Images/wintercollection.jpg" alt="">
+                <h1>Winter Special 2024</h1>
+                <button class="viewmore">View More</button>
+            </div>
+            <div class="specialscontainer" onmouseover="changeImage(this)" onmouseout="resetImage(this)">
+                <img src="Images/augustcollection.jpg" alt="">
+                <h1>August Special 2024</h1>
+                <button class="viewmore">View More</button>
+            </div>
+        </div>
+    </section>
+    <section class="deals" id="Deals">
+        <h1>Sales & Deals</h1>
+        <div class="dealsgrid">
+            <div class="dealscontainer">
+                <div class="dealscontent">
+                    <img src="Images/productimage1.jpg" alt="">
+                    <h2>Product Title</h2>
+                    <p>Product Description</p>
+                    <h3>Price</h3>
+                </div>
+            </div>
+            <div class="dealscontainer">
+                <div class="dealscontent">
+                    <img src="Images/productimage2.jpg" alt="">
+                    <h2>Product Title</h2>
+                    <p>Product Description</p>
+                    <h3>Price</h3>
+                </div>
+            </div>
+            <div class="dealscontainer">
+                <div class="dealscontent">
+                    <img src="Images/productimage3.jpg" alt="">
+                    <h2>Product Title</h2>
+                    <p>Product Description</p>
+                    <h3>Price</h3>
+                </div>
+            </div>
+            <div class="dealscontainer">
+                <div class="dealscontent">
+                    <img src="Images/productimage4.jpg" alt="">
+                    <h2>Product Title</h2>
+                    <p>Product Description</p>
+                    <h3>Price</h3>
+                </div>
+            </div>
+        </div>
+        <button class="viewmore">View More</button>
+
+    </section>
+    <section class="signup" id="SignUp">
+        <h2>Newsletter Sign Up</h2>
+        <h1>Be in the Know.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni consequuntur nobis, quae vel itaque sint
+            necessitatibus? Eveniet vitae amet mollitia minima, deserunt sed voluptate, obcaecati reprehenderit
+            inventore rerum id dolorum!</p>
+        <form>
+            <label for="email">Enter your email:</label>
+            <input type="text">
+        </form>
+    </section>
+    <section class="footer">
+        <div class="footermain">
+            <img src="" alt="">
+        </div>
+        <div class="footerlinks">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Collections">Collections</a></li>
+                <li><a href="#Deals">Deals</a></li>
+                <li><a href="#Specials">specials</a></li>
+                <li><a href="#SignUp">Sign Up</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footerbottom">
+            <p>Copyright &copy;2024 Designed by <span class="designer">Rafael Saimon D. Paraiso</span></p>
+        </div>
+    </section>
+    /* --text: #1c0909;
+    --background: #fefafa;
+    --primary: #dc2c2b;
+    --secondary: #f27878;
+    --accent: #f94443; */
+    <script>
+        var copy = document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector(".logos").appendChild(copy);
+
+        let hoverTimeout;
+
+        function changeImage(element) {
+            clearTimeout(hoverTimeout);
+            const imgElement = element.querySelector('img');
+
+            hoverTimeout = setTimeout(() => {
+                if (imgElement.src.includes('augustcollection.jpg')) {
+                    imgElement.src = 'Images/augusthover.jpg';
+                } else if (imgElement.src.includes('wintercollection.jpg')) {
+                    imgElement.src = 'Images/winterhover.jpg';
+                }
+            }, 100); // Adjust the timeout to reduce stuttering
+        }
+
+        function resetImage(element) {
+            clearTimeout(hoverTimeout);
+            const imgElement = element.querySelector('img');
+
+            hoverTimeout = setTimeout(() => {
+                if (imgElement.src.includes('augusthover.jpg')) {
+                    imgElement.src = 'Images/augustcollection.jpg';
+                } else if (imgElement.src.includes('winterhover.jpg')) {
+                    imgElement.src = 'Images/wintercollection.jpg';
+                }
+            }, 100); // Adjust the timeout to reduce stuttering
+        }
+
+
+    </script>
+</body>
+
+</html>

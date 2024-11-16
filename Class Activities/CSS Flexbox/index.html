@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Activity</title>
+    <link rel="stylesheet" href="sass2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Monkey<span class="logo">pedia</span></h1>
+            <ul class="navlinks">
+                <li><a href="#home" class="">Home</a></li>
+                <li><a href="#cards" class="">Card</a></li>
+                <li><a href="#gallery" class="">Gallery</a></li>
+                <li><a href="#quiz" class="">Quiz</a></li>
+                <li><a href="#todolist" class="">List</a></li>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div class="hometext">
+                <h1>Go <span class="bananas">Bananas</span>!</h1>
+                <h2>Go on and explore our wonderful facts about Monkeys.</h2>
+            </div>
+            <img src="Gallery Images/heromonke.png" alt="">
+        </section>
+        <div class="learnheader">
+            <h1 id="Learn">Learn More!</h1>
+            <hr class="line">
+        </div>
+        <section id="cards">
+            <div class="cardcontainer">
+                <div class="cardimage">
+                    <img src="Card Images/gorillla.jpg" alt="">
+                </div>
+                <div class="containercontent">
+                    <div class="containertext">
+                        <h1>Gorilla</h1>
+                        <p>Gorillas are herbivorous, predominantly ground-dwelling great apes that inhabit the tropical
+                            forests of equatorial Africa. The genus Gorilla is divided into two species: the eastern
+                            gorilla and the western gorilla, and either four or five subspecies.
+                        </p>
+                    </div>
+                    <button class="readmore">Read More</button>
+                </div>
+            </div>
+            <div class="cardcontainer">
+                <div class="cardimage">
+                    <img src="Card Images/chimp.jpg" alt="">
+                </div>
+                <div class="containercontent">
+                    <div class="containertext">
+                        <h1>Chimpanzee</h1>
+                        <p>The chimpanzee, also simply known as the chimp, is a species of great ape native to the
+                            forests and savannahs of tropical Africa. It has four confirmed subspecies and a fifth
+                            proposed one
+                        </p>
+                    </div>
+                    <button class="readmore">Read More</button>
+                </div>
+            </div>
+            <div class="cardcontainer">
+                <div class="cardimage">
+                    <img src="Card Images/orangutan-1.jpg" alt="">
+                </div>
+                <div class="containercontent">
+                    <div class="containertext">
+                        <h1>Orangutan</h1>
+                        <p>Orangutans are great apes native to the rainforests of Indonesia and Malaysia. They are now
+                            found only in parts of Borneo and Sumatra, but during the Pleistocene they ranged throughout
+                            Southeast Asia and South China.
+                        </p>
+                    </div>
+                    <button class="readmore">Read More</button>
+                </div>
+            </div>
+        </section>
+        <div class="galleryheader">
+            <h1 id="Gallery">Gallery</h1>
+            <hr class="line">
+        </div>
+        <section class="gallery">
+            <div class="monkeygallery">
+                <div class="column">
+                    <div class="photo">
+                        <img src="Gallery Images/1.jpg" alt="" class="">
+                    </div>
+                    <div class="photo">
+                        <img src="Gallery Images/2.jpg" alt="" class="">
+                    </div>
+                    <div class="photo">
+                        <img src="Gallery Images/3.jpg" alt="" class="">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="photo">
+                        <img src="Gallery Images/4.jpg" alt="" class="">
+                    </div>
+                    <div class="photo">
+                        <img src="Gallery Images/5.jpeg" alt="" class="">
+                    </div>
+                    <div class="photo">
+                        <img src="Gallery Images/6.jpg" alt="" class="">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="photo">
+                        <img src="Gallery Images/7.jpg" alt="" class="">
+                    </div>
+                    <div class="photo">
+                        <img src="Gallery Images/8.jpg" alt="" class="">
+                    </div>
+                    <div class="photo">
+                        <img src="Gallery Images/9.jpg" alt="" class="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="quizheader">
+            <h1 id="Quiz">Monkey Quiz</h1>
+            <hr class="line">
+        </div>
+        <section class="quiz">
+            <section class="quiz">
+                <div class="quiz-question">
+                    <div class="question-content">
+                        <h1>Question 1:</h1>
+                        <h2>What is the primary diet of most monkeys?</h2>
+                        <div class="quiz-choices">
+                            <button>Meat</button>
+                            <button>Fruits and leaves</button>
+                            <button>Fish</button>
+                            <button>Grains</button>
+                        </div>
+                    </div>
+                    <img src="Gallery Images/1.jpg" alt="Monkey Image 1" class="question-image">
+                </div>
+
+                <div class="quiz-question">
+                    <div class="question-content">
+                        <h1>Question 2:</h1>
+                        <h2>Which of the following is a type of monkey?</h2>
+                        <div class="quiz-choices">
+                            <button>Capuchin</button>
+                            <button>Penguin</button>
+                            <button>Koala</button>
+                            <button>Ostrich</button>
+                        </div>
+                    </div>
+                    <img src="Gallery Images/2.jpg" alt="Monkey Image 2" class="question-image">
+                </div>
+
+                <div class="quiz-question">
+                    <div class="question-content">
+                        <h1>Question 3:</h1>
+                        <h2>Where do most monkeys live?</h2>
+                        <div class="quiz-choices">
+                            <button>Deserts</button>
+                            <button>Oceans</button>
+                            <button>Forests</button>
+                            <button>Mountains</button>
+                        </div>
+                    </div>
+                    <img src="Gallery Images/4.jpg" alt="Monkey Image 3" class="question-image">
+                </div>
+
+                <div class="quiz-question">
+                    <div class="question-content">
+                        <h1>Question 4:</h1>
+                        <h2>What is a group of monkeys called?</h2>
+                        <div class="quiz-choices">
+                            <button>Pack</button>
+                            <button>School</button>
+                            <button>Flock</button>
+                            <button>Troupe</button>
+                        </div>
+                    </div>
+                    <img src="Gallery Images/6.jpg" alt="Monkey Image 4" class="question-image">
+                </div>
+
+                <div class="quiz-question">
+                    <div class="question-content">
+                        <h1>Question 5:</h1>
+                        <h2>Which sense is particularly strong in monkeys?</h2>
+                        <div class="quiz-choices">
+                            <button>Hearing</button>
+                            <button>Vision</button>
+                            <button>Taste</button>
+                            <button>Smell</button>
+                        </div>
+                    </div>
+                    <img src="Gallery Images/8.jpg" alt="Monkey Image 5" class="question-image">
+                </div>
+            </section>
+            <section class="todo-section">
+                <div class="todo-header">
+                    <h1>To-Do List!</h1>
+                    <div class="line"></div>
+                </div>
+                <div class="todo-controls">
+                    <button class="undo-btn">Undo All Deletes</button>
+                </div>
+                <div class="todo-list">
+                    <div class="todo-item">
+                        <input type="checkbox" id="task1">
+                        <label for="task1">Learn about monkeys</label>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                    <div class="todo-item">
+                        <input type="checkbox" id="task2">
+                        <label for="task2">Visit the zoo</label>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                    <div class="todo-item">
+                        <input type="checkbox" id="task3">
+                        <label for="task3">Answer the Quiz</label>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                    <div class="todo-item">
+                        <input type="checkbox" id="task4">
+                        <label for="task4">Make this website responsive</label>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                    <div class="todo-item">
+                        <input type="checkbox" id="task5">
+                        <label for="task5">Pass on time</label>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h2>About Us</h2>
+                        <p>Learn everything about monkeys and their fascinating world. Join us in our mission to educate
+                            and protect these amazing primates.</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h2>Quick Links</h2>
+                        <a href="#home">Home</a>
+                        <a href="#cards">Learn</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#quiz">Quiz</a>
+                    </div>
+
+                    <div class="footer-section">
+                        <h2>Contact</h2>
+                        <p>Email: info@monkeyworld.com</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Address: Monkey Street 123, Jungle City</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h2>Follow Us</h2>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook">FB</a>
+                            <a href="#" aria-label="Twitter">TW</a>
+                            <a href="#" aria-label="Instagram">IG</a>
+                            <a href="#" aria-label="YouTube">YT</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2023 <span>Monkey World</span>. All rights reserved.</p>
+                </div>
+            </footer>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    // Define the correct answers for each question
+                    const correctAnswers = {
+                        0: 'Fruits and leaves',  // Question 1
+                        1: 'Capuchin',  // Question 2
+                        2: 'Forests',  // Question 3
+                        3: 'Troupe',  // Question 4
+                        4: 'Vision'   // Question 5
+                    };
+
+                    // Get all quiz questions
+                    const quizQuestions = document.querySelectorAll('.quiz-question');
+
+                    quizQuestions.forEach((question, index) => {
+                        const buttons = question.querySelectorAll('button');
+
+                        buttons.forEach(button => {
+                            button.addEventListener('click', () => {
+                                // Reset button colors
+                                buttons.forEach(btn => btn.style.backgroundColor = 'darkgreen');
+
+                                // Check if the clicked button is the correct answer
+                                if (button.textContent === correctAnswers[index]) {
+                                    button.style.backgroundColor = 'limegreen'; // Correct answer
+                                } else {
+                                    button.style.backgroundColor = 'red'; // Incorrect answer
+                                }
+                            });
+                        });
+                    });
+                });
+
+                // Get the todo-list container
+                // Store deleted items array
+                let deletedItems = [];
+
+                // Get the todo-list container
+                const todoList = document.querySelector('.todo-list');
+
+                // Add event listener to the container
+                todoList.addEventListener('click', function (e) {
+                    if (e.target.classList.contains('delete-btn')) {
+                        const todoItem = e.target.closest('.todo-item');
+                        // Store the deleted item before removing
+                        deletedItems.push(todoItem.cloneNode(true));
+                        todoItem.remove();
+                    }
+                });
+
+                // Add undo functionality
+                function undoDeletes() {
+                    // Restore all deleted items
+                    deletedItems.forEach(item => {
+                        todoList.appendChild(item);
+                    });
+                    // Clear the deleted items array
+                    deletedItems = [];
+                }
+
+                // Get the undo button
+                const undoButton = document.querySelector('.undo-btn');
+
+                // Add click event listener
+                undoButton.addEventListener('click', undoDeletes);
+
+                document.addEventListener('DOMContentLoaded', () => {
+                    const hamburger = document.querySelector('.hamburger');
+                    const navLinks = document.querySelector('.navlinks');
+
+                    hamburger.addEventListener('click', () => {
+                        // Toggle active classes
+                        hamburger.classList.toggle('active');
+                        navLinks.classList.toggle('active');
+
+                        // Add body scroll lock when menu is open
+                        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
+                    });
+
+                    // Close menu when clicking a link
+                    document.querySelectorAll('.navlinks a').forEach(link => {
+                        link.addEventListener('click', () => {
+                            hamburger.classList.remove('active');
+                            navLinks.classList.remove('active');
+                            document.body.style.overflow = 'auto';
+                        });
+                    });
+                });
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,741 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  line-height: 1.5;
+}
+body h1,
+body h2 {
+  font-family: "Montserrat", serif;
+}
+body p {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100px;
+  position: fixed;
+  top: 0;
+  border-bottom: 5px solid yellowgreen;
+  width: 100%;
+  z-index: 9999;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar h1 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 5px 5px 20px black;
+}
+.navbar .logo {
+  color: yellow;
+  text-shadow: 5px 5px 20px black;
+}
+
+.navlinks {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navlinks li {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  text-shadow: 5px 5px 10px black;
+}
+.navlinks a {
+  margin: 0 20px;
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  font-weight: bolder;
+  border-radius: 8px;
+}
+.navlinks a:hover {
+  padding-inline: 80px;
+  background: linear-gradient(45deg, yellowgreen, green);
+  transition: all 0.1s ease-in;
+}
+
+#home {
+  display: grid;
+  background-image: url("image.png");
+  background-size: cover;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  padding-inline: 50px;
+  width: 100%;
+  height: 100vh;
+}
+#home .hometext {
+  z-index: 2;
+}
+#home .hometext h1 {
+  font-size: 6rem;
+  color: yellowgreen;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+}
+#home .hometext .bananas {
+  color: yellow;
+}
+#home .hometext h2 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+}
+#home img {
+  transform: scaleX(-1);
+  height: 80%;
+  width: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  box-shadow: 20px 20px 20px black;
+  z-index: 1;
+}
+
+.learnheader {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: black;
+}
+.learnheader h1 {
+  font-size: 4.5rem;
+  color: white;
+  text-shadow: 5px 5px 10px white;
+}
+.learnheader .line {
+  margin: auto 0;
+  height: 16px;
+  width: 70vw;
+  background: linear-gradient(45deg, yellow, yellowgreen, green, darkgreen);
+  border: none;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background: linear-gradient(90deg, yellow, yellowgreen, green, darkgreen);
+  gap: 20px;
+  padding: 20px;
+  height: 85vh;
+}
+
+.cardcontainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #f5f5f5;
+  margin: 0;
+  border-radius: 8px;
+}
+.cardcontainer h1 {
+  font-size: 2.25rem;
+  color: green;
+  text-shadow: 2px 2px 2px yellowgreen;
+}
+.cardcontainer p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.cardcontainer .cardimage img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+.cardcontainer .containercontent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  flex-grow: 1;
+}
+.cardcontainer .readmore {
+  margin: 0 auto;
+  margin-top: auto;
+  width: 100%;
+  background: yellowgreen;
+  color: white;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border: 2px solid green;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.cardcontainer .readmore:hover {
+  background: darkgreen;
+}
+
+.galleryheader {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: auto 0;
+  padding: 20px;
+  background: black;
+}
+.galleryheader h1 {
+  font-size: 4.5rem;
+  color: white;
+  text-shadow: 5px 5px 10px white;
+}
+.galleryheader .line {
+  margin: auto 0;
+  height: 16px;
+  width: 70vw;
+  background: linear-gradient(-45deg, yellow, yellowgreen, green, darkgreen);
+  border: none;
+}
+
+.gallery {
+  display: flex;
+  background-color: black;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 0 20px;
+}
+
+.monkeygallery {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  gap: 20px;
+}
+
+.photo {
+  display: flex;
+  flex-grow: 1;
+}
+.photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.photo img:hover {
+  transform: scale(1.05);
+}
+
+.quizheader {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: black;
+}
+.quizheader h1 {
+  font-size: 4.5rem;
+  color: white;
+  text-shadow: 5px 5px 10px white;
+}
+.quizheader .line {
+  margin: auto 0;
+  height: 16px;
+  width: 70vw;
+  background: linear-gradient(45deg, yellow, yellowgreen, green, darkgreen);
+  border: none;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 10px;
+  background-color: black;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.quiz .quiz-question {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  border: 2px solid yellowgreen;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+}
+.quiz .quiz-question .question-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+.quiz .quiz-question .question-content h1 {
+  font-size: 3rem;
+}
+.quiz .quiz-question .question-content h2 {
+  font-size: 2rem;
+  color: yellowgreen;
+  margin-bottom: 20px;
+}
+.quiz .quiz-question .question-image {
+  width: 300px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+.quiz .quiz-choices {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.quiz .quiz-choices button {
+  width: 100%;
+  height: 100px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: darkgreen;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.quiz .quiz-choices button:hover {
+  background-color: #009700;
+}
+
+.todo-section {
+  background-color: black;
+  padding: 0 20px;
+}
+.todo-section .todo-controls {
+  padding: 0px;
+  margin-bottom: 20px;
+}
+.todo-section .todo-controls .undo-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+.todo-section .todo-controls .undo-btn:hover {
+  background-color: #7ba428;
+}
+.todo-section .todo-header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.todo-section .todo-header h1 {
+  font-size: 4.5rem;
+  color: white;
+  text-shadow: 5px 5px 10px white;
+}
+.todo-section .todo-header .line {
+  margin: auto 0;
+  height: 16px;
+  width: 70vw;
+  background: linear-gradient(-45deg, yellow, yellowgreen, green, darkgreen);
+  border: none;
+}
+.todo-section .todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.todo-section .todo-list .todo-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  border: 2px solid yellowgreen;
+  padding: 40px;
+}
+.todo-section .todo-list .todo-item input[type=checkbox] {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  accent-color: yellowgreen;
+}
+.todo-section .todo-list .todo-item label {
+  flex: 1;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+}
+.todo-section .todo-list .todo-item .delete-btn {
+  background-color: darkred;
+  color: white;
+  border: none;
+  width: 200px;
+  height: 100px;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: bolder;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+}
+.todo-section .todo-list .todo-item .delete-btn:hover {
+  background-color: #be0000;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-top: 5px solid yellowgreen;
+  padding: 40px 20px;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+footer .footer-content .footer-section {
+  flex: 1;
+}
+footer .footer-content .footer-section h2 {
+  color: yellowgreen;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px black;
+}
+footer .footer-content .footer-section p,
+footer .footer-content .footer-section a {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+footer .footer-content .footer-section a {
+  display: block;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+footer .footer-content .footer-section a:hover {
+  color: yellowgreen;
+}
+footer .footer-content .footer-section .social-links {
+  display: flex;
+  gap: 20px;
+}
+footer .footer-content .footer-section .social-links a {
+  background: yellowgreen;
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-content .footer-section .social-links a:hover {
+  background: #7ba428;
+  transform: scale(1.1);
+}
+footer .footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid yellowgreen;
+  text-align: center;
+}
+footer .footer-bottom p {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+footer .footer-bottom p span {
+  color: yellowgreen;
+}
+
+@media (max-width: 1024px) {
+  .learnheader,
+  .galleryheader,
+  .quizheader,
+  .todo-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .learnheader h1,
+  .galleryheader h1,
+  .quizheader h1,
+  .todo-header h1 {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 720px) {
+  .learnheader h1,
+  .galleryheader h1,
+  .quizheader h1,
+  .todo-header h1 {
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 540px) {
+  .learnheader h1,
+  .galleryheader h1,
+  .quizheader h1,
+  .todo-header h1 {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 1024px) {
+  .learnheader .line,
+  .galleryheader .line,
+  .quizheader .line,
+  .todo-header .line {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .learnheader .line,
+  .galleryheader .line,
+  .quizheader .line,
+  .todo-header .line {
+    display: none;
+  }
+}
+@media (max-width: 540px) {
+  .learnheader .line,
+  .galleryheader .line,
+  .quizheader .line,
+  .todo-header .line {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    background-color: rgb(0, 0, 0);
+    position: static;
+  }
+}
+
+@media (max-width: 1024px) {
+  #home {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    min-height: 100vh;
+  }
+}
+@media (max-width: 1024px) {
+  #home .hometext h1 {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 720px) {
+  #home .hometext h1 {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 540px) {
+  #home .hometext h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 1024px) {
+  #home .hometext h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 720px) {
+  #home .hometext h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 540px) {
+  #home .hometext h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  #home img {
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    background: none;
+  }
+}
+@media (max-width: 720px) {
+  #home img {
+    position: relative;
+    height: 50%;
+    margin: 0 auto;
+    background: none;
+  }
+}
+@media (max-width: 540px) {
+  #home img {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  #cards {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  #cards .cardcontainer {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .gallery {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .monkeygallery {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .monkeygallery .column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .quiz {
+    padding: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .quiz .quiz-question {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 1024px) {
+  .quiz .quiz-question .question-content {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .quiz .quiz-question .question-content .question-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .todo-section {
+    padding: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .todo-section .todo-item {
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+  }
+}
+@media (max-width: 720px) {
+  .todo-section .todo-item {
+    flex-direction: column;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  footer {
+    padding: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  footer .footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+footer .footer-content .footer-section {
+  width: 100%;
+  text-align: center;
+}
+footer .footer-content .footer-section .social-links {
+  justify-content: center;
+}
+
+.navbar {
+  margin: 0 auto;
+  padding: 20px;
+}
+@media (max-width: 1024px) {
+  .navbar h1 {
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 720px) {
+  .navbar h1 {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 540px) {
+  .navbar h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .navlinks {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .navlinks a {
+    margin: 0 10px;
+    padding: 15px;
+  }
+  .navlinks a:hover {
+    padding-inline: 40px;
+  }
+}/*# sourceMappingURL=sass2.css.map */

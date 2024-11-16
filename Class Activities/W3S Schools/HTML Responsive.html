@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- Declares that the document is HTML5 -->
+<html lang="en"> 
+<!-- <html> is the root element of an HTML Page -->
+    <!-- lang attribute is used to declare the language of a webpage. -->
+<head>
+    <!-- <head> contains the meta information about the HTML page -->
+    <title>W3S Activities for Refresher</title>
+    <!-- Used for creating the title for a webpage. -->
+
+    <link rel="icon" type="image/x-icon" href="bananalogo.jpg">
+    <!-- Favicon refers to the image seen in the website tab. -->
+
+</head>
+
+<body style="background-color:powderblue;"> 
+    <!-- The documents main body, where the user writes all of the necessary information in the webpage. -->
+        <!-- style:"background-color:powderblue;" is used to add a background color in the page."  -->
+
+    <h1 style="font-family: 'Courier New', Courier, monospace;">Rafael Paraiso</h1>
+    <!-- h1 is the element used for the highest heading -->
+        <!-- "font-family" is used to add a different font onto the text. -->
+
+
+    <p style="color: red;">My name is Rafael Saimon D. Paraiso. I was born in Manila, Philippines on February 7, 2006. <br> I am currently studying in Bath Spa RAK.</p>
+
+    <hr>
+    <!-- p is used to create paragraphs in the website. -->
+    <!-- <br> is used to create a line break between paragraphs -->
+        <!-- style is used to add styles to an element, in this example we used color. -->
+    <!-- <hr> is used to separate content in a page. -->
+
+    <pre>
+        My name is Rafael Saimon D. Paraiso
+        I am 18 years old.
+        I was born in Manila.
+    </pre>
+    <!-- pre defines preformatted text therefore it preserves spaces and line breaks. -->
+
+    <a href="https://www.youtube.com">Visit YouTube</a>
+    <!-- <a> defines a hyperlink. -->
+        <!-- href specifies the URL of the page the link goes to. -->
+        
+    <p><mark>This</mark> <i>image</i> is of a <b>Banana</b></p>
+    <!-- In here we use some examples of text formatting using bolden, italic, mark. -->
+        <!-- <b> boldents text, <i> italizes text, and <mark> highlights text. -->
+
+    <img src="images.jpeg" alt="banana" style="max-width:500px;height:auto;">
+    <!-- <img> is used to embed an image in the HTML page. -->
+        <!-- src attribute is used to specify where the image is located. -->
+        <!-- alt attribute is used to give an alternate text for the image -->
+        <!-- width and height attributes are used to define the width and height of the image -->
+
+    <!-- The Hierarchy of Headings -->
+        <h1 style="font-size: 60px;">Rafael Paraiso</h1>
+                <!-- style="font-size:60px;" is used to add a font size for the heading text." -->
+        <h2>Rafael Paraiso</h2>
+        <h3>Rafael Paraiso</h3>
+        <h4>Rafael Paraiso</h4>
+        <h5>Rafael Paraiso</h5>
+        <h6>Rafael Paraiso</h6>
+
+
+        <p>The following is one of my favorite quotes:</p>
+        <blockquote cite="https://www.hertelier.com/post/how-to-work-smarter-not-harder#:~:text=Turns%20out%2C%20the%20term%20“work,simplification%20program%2C%20coined%20the%20term."> "Work Smarter, not Harder" by Allen F. Morgenstern</blockquote>
+            <!-- <blockquote> is used to define a section that is quoted from another source  -->
+                <!-- cite defines the title of a creative work. -->
+
+        <table>
+        <!-- <tr> defines a table row, and <th> sets a column header -->
+            <tr>
+                <th>Name</th> 
+                <!-- The <th> tag defines the header for the column -->
+                <th>Age</th>  
+                <th>Occupation</th> 
+            </tr>
+            <!-- <td> tags are used to define individual data cells within the rows -->
+            <tr>
+                <td>Rafael Paraiso</td>
+                <td>18</td>
+                <td>College Student</td>
+            </tr>
+            <tr>
+                <td>Wayeth Cabanlit</td>
+                <td>20</td>
+                <td>College Student</td>
+            </tr>
+        </table>                
+
+        <ul> 
+            <!-- <ul> creates an unordered list. -->
+            <li>Item One</li>
+            <!-- <li> is used for the item in the list. -->
+            <li>Item Two</li>
+            <li>Item Three</li>
+        </ul>
+        <ol>
+            <!-- <ol> creates an ordered list. -->
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ol>
+        
+        <p>This is a "block-level" element.</p>
+        <!-- block-level elements always starts as a new line and always takes the full width available. -->
+        <button>This is an "inline" element.</button>
+        <!-- inline elements takes only as much width as necessary and does not start at a new line. -->
+
+
+        <!-- This is a <div> element, which serves as a container for the paragraph below -->
+        <div class="container">
+            <!-- The <p> tag creates a paragraph, and the id attribute gives it a unique identifier 'divparagraph' -->
+            <p id="divparagraph">This paragraph is inside a div element.</p>
+        </div>
+        
+        <!-- The <style> block below contains CSS to style the div element -->
+        <style>
+            /* The 'div' selector targets all <div> elements */
+            div {
+                /* The 'margin' attribute adds a 2% margin around the div */
+                margin: 2%;
+                
+                /* The 'background-color' attribute sets the background of the div to white */
+                background-color: white;
+                
+                /* The 'text-align' attribute centers the text inside the div */
+                text-align: center;
+            }
+        </style>
+        
+        <!-- Button element outside the script tag -->
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+            Click me to display Date and Time.
+        </button>
+
+        <!-- Paragraph where the date and time will be displayed -->
+        <p id="demo"></p>
+
+            <!-- The 'onclick' attribute triggers a JavaScript function when the button is clicked -->
+            <!-- Button text that prompts the user to click for date and time -->
+
+        <h1 style="font-size:9vw">I am currently having a fever.</h1>
+            <!-- 1vw = 1% of viewport width. Using viewport width is one of the ways to create a responsive website. -->
+        <img src="Proboscis-monkey.jpg" style="max-width:100%;height:auto;">
+            <!-- Another way is by using styles to set max-widths or heights to percentages to fit the screen. -->
+</html>

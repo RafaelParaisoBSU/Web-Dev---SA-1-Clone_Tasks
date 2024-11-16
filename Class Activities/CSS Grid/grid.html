@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Tasks</title>
+    <link rel="stylesheet" href="gridstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="grid.js"></script>
+</head>
+
+<body>
+    <header class="header" id="Home">
+        <h1>Work<span class="Assistant">Assistant</span></h1>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input" />
+            <button class="search-button">Search</button>
+        </div>
+    </header>
+    <section class="sidebar">
+        <a href="grid.html">Home</a>
+        <a href="gridgallery.html">Gallery</a>
+        <a href="#products">Products</a>
+        <a href="gridquiz.html">Quiz</a>
+    </section>
+    <main class="main">
+        <div class="card">
+            <h2>Recent Notifications:</h2>
+            <ul>
+                <li>- <b>New Activity!</b> Grid Website</li></a>
+                <li>- <b>New Activity!</b> Clone Task</li>
+                <li>- <b>New Activity!</b> Game Development</li>
+                <li>- <b>New Announcement:</b> FRESHERS PARTY!</li>
+                <li>- <b>Task Graded:</b> W3S Referesher (96/100)</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>Work Completed:</h2>
+            <div class="chart-container">
+                <canvas id=workCompletedChart></canvas>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Graded Activities:</h2>
+            <div class="chart-container">
+                <canvas id=workGradedChart></canvas>
+            </div>
+        </div>
+        <div class="card">
+            <h1>Tasks <span class="Assistant">Overview</span></h1>
+            <p><b>Web Development II:
+                    <br><br>
+                    Clone Task 1:</b> Layout and Typography
+                <br><br>
+                Your task is to create the website for a blog post about the Erased Tapes Records music label.
+                <br><br>
+                You must implement the website according to the [written specification](#target-devices) and [wireframe
+                mock-ups](wireframes) provided. For any details that have not been specified, you must make appropriate
+                design decisions about how to implement that detail. All required changes to the design on different
+                screen sizes are shown in the wireframes or are explained below. The images and placeholder text you
+                will need are provided in the [`assets`](assets) folder.
+                <br><br>
+                <b>Clone Task 2:</b> Advanced Layout
+                <br><br>
+                Your task is to create the website for 'watch.it', a made-up movie streaming service.
+                <br><br>
+                You must implement the website according to the [written specification](#target-devices) and [wireframe mock-ups](wireframes) provided. For any details that have not been specified, you must make appropriate design decisions about how to implement that detail. All required changes to the design on different screen sizes are shown in the wireframes or are explained below. The images and text you will need are provided in the [`assets`](assets) folder.
+                <br><br>
+                <b>Game Development I:</b> 
+                <br><br>
+                <b>Assessment 1:</b> Game Review
+                <br><br>
+                You will work in a small group to develop a presentation on an Indie Game title. You will assign roles within your group, negotiating on who is best to cover each role. You should consider forming your team based on including classmates with varied interests within the context of game development. The group will analyze an existing indie game from the perspective of key industry roles - e.g. Game Developer (game structure, mechanics, logic), Level Designer, Game Writer, Concept Artist, Producer (production methods, schedules, marketing, Social Media campaigns, liaising with fans). 
+                <br><br>
+                You must define what you think the motivations and the goals of each person in these key industry roles were in creating the game.
+            </p>
+        </div>
+        <div class="card" id="products">
+            <h1>Basic Plan</h1>
+            <a href=""><h2>0.00$ / month</h2></a>
+            <ul>
+                <li>- Basic Access: Access essential features without charge.</li>
+                <hr>
+                <li>- Limited Support: Basic customer support via email or forums.</li>
+                <hr>
+                <li>- User Limit: Limited to 3 users.</li>
+                <hr>
+                <li>- Ad-Supported: Users see ads to cover operational costs.</li>
+                <hr>
+                <li>- No Customization: Limited options for interface or feature customization.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h1>Premium Plan</h1>
+            <a href="#"><h2>9.99$ / month</h2></a>
+            <ul>
+                <li>- Ad-Free Experience: Enjoy the service without ads.</li>
+                <hr>
+                <li>- Enhanced Support: Priority customer support via chat or phone.</li>
+                <hr>
+                <li>- User Limit: Allows up to 10 users.</li>
+                <hr>
+                <li>- Advanced Features: Access to additional features like analytics tools.</li>
+                <hr>
+                <li>- Customization Options: More flexibility in user interface customization.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h1>Pro++ Plan</h1>
+            <a href="#"><h2>19.99$ / month</h2></a>
+            <ul>
+                <li>- Unlimited Access: No limit on the number of users.</li>
+                <hr>
+                <li>- Personalized support from an account manager.</li>
+                <hr>
+                <li>- Advanced Security Features</li>
+                <hr>
+                <li>- Full Suite of Features: Access to all advanced tools for collaboration.</li>
+                <hr>
+                <li>- Integrations: Ability to integrate with third-party applications.</li>
+            </ul>
+        </div>
+        
+    </main>
+</body>
+
+</html>
