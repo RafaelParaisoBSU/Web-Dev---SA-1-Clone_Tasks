@@ -260,6 +260,7 @@ main .gridimages img:nth-child(1) {
 @media screen and (width <= 720px) {
   /* Adjustments for the navigation bar */
   .navbar {
+    width: 100%;
     /* Styling for the unordered list within the navigation bar */
     /* Styling for the list items within the unordered list */
     /* Styling for the anchor tags within the list items */
