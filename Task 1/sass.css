@@ -254,7 +254,7 @@ main .gridimages img:nth-child(1) {
 }
 @media screen and (width <= 720px) {
   body {
-    line-height: 1.5;
+    line-height: 1.25;
   }
   /* Adjustments for the navigation bar */
   .navbar {
@@ -323,10 +323,6 @@ main .gridimages img:nth-child(1) {
   }
 }
 @media screen and (width <= 540px) {
-  /* Adjustment for the body styling */
-  body {
-    line-height: 1.25;
-  }
   /* Adjustments for the navigation bar */
   .navbar {
     margin-bottom: 12px;
