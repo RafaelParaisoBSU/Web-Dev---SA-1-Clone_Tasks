@@ -198,7 +198,6 @@ main .gridimages img:nth-child(1) {
   }
   main .topsection .subheader p {
     text-align: center;
-    margin-bottom: 30px;
   }
   main .columncontent {
     -moz-column-count: auto;
