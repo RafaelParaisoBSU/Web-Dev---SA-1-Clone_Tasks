@@ -174,11 +174,6 @@ main {
 
 @media screen and (width <=1024px) {
 
-    /* Adjustments for the body */
-    body {
-        line-height: 1.5;
-    }
-
     /* Adjustments for the header image */
     header img {
         width: 80px;
@@ -471,10 +466,6 @@ main {
 }
 
 @media screen and (width <=360px) {
-
-    body {
-        line-height: 1.25;
-    }
 
     /* Adjustments for the navigation bar */
     .navbar {
