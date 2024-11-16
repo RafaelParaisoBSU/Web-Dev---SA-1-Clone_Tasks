@@ -160,12 +160,11 @@
     <section class="signup" id="SignUp">
         <h2>Newsletter Sign Up</h2>
         <h1>Be in the Know.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni consequuntur nobis, quae vel itaque sint
-            necessitatibus? Eveniet vitae amet mollitia minima, deserunt sed voluptate, obcaecati reprehenderit
-            inventore rerum id dolorum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni consequuntur nobis, quae vel itaque sint necessitatibus? Eveniet vitae amet mollitia minima, deserunt sed voluptate, obcaecati reprehenderit inventore rerum id dolorum!</p>
         <form>
             <label for="email">Enter your email:</label>
-            <input type="text">
+            <input type="text" id="email" name="email" placeholder="Your email address">
+            <button type="submit">Subscribe</button>
         </form>
     </section>
     <section class="footer">
@@ -177,7 +176,7 @@
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#Collections">Collections</a></li>
                 <li><a href="#Deals">Deals</a></li>
-                <li><a href="#Specials">specials</a></li>
+                <li><a href="#Specials">Specials</a></li>
                 <li><a href="#SignUp">Sign Up</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
@@ -186,11 +185,6 @@
             <p>Copyright &copy;2024 Designed by <span class="designer">Rafael Saimon D. Paraiso</span></p>
         </div>
     </section>
-    /* --text: #1c0909;
-    --background: #fefafa;
-    --primary: #dc2c2b;
-    --secondary: #f27878;
-    --accent: #f94443; */
     <script>
         var copy = document.querySelector(".logos-slide").cloneNode(true);
         document.querySelector(".logos").appendChild(copy);
