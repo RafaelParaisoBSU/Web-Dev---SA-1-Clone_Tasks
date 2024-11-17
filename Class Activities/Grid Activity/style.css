@@ -2,6 +2,7 @@
     margin: 0;
     box-sizing: border-box;
     background-color: black;
+    transition: all 0.25s ease-in-out;
 }
 
 body {
@@ -15,17 +16,16 @@ body {
     margin: 20px;
 }
 
-.image {
-    display: block; 
-    transition: all 0.25s ease-in-out;
-
+.moviecontainer{
+    display: flex;
+    flex-direction: column;
 }
 
-.image:hover {
+.moviecontainer:hover {
     scale: 1.1;
 }
 
-.image img {
+.moviecontainer img {
     width: 100%; 
     height: auto; 
 }
